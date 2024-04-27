@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #00bfff;
+        }
+        .article {
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            background-color: #333;
+        }
+        .article:hover {
+            background-color: #555;
+        }
+        .article-content {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #00bfff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .google-font
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+.navbar{
+    background: none; padding-right: 15px;padding-left: 15px;  border-radius: 10px; opacity: 1;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+    font-size: 35px; font-weight: 600; color: white;
+}
+li{
+    list-style: none; display: inline-block;
+}
+.navbar ul li a {
+    margin: 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.navbar ul li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Admin Panel</a> </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/resourcer_center.html">Resource Center</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Resource Center</h1>
+        <h2>Welcome to our Resource Center, where we provide valuable information and expert advice to help you become the best pet parent possible. Whether you're a seasoned pet owner or embarking on the journey of pet ownership for the first time, our comprehensive articles cover everything you need to know about caring for your furry friend.</h2>
+        <div class="article" onclick="window.location='/articles/dog_Care.html';">
+            <a href="/articles/dog_Care.html">Basic Dog Care 101: Essential Tips for New Dog Owners</a>
+            <div class="article-content">
+                Bringing a furry friend into your home is an exciting and rewarding experience. However, it also comes with great responsibility...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/dog_breed.html';">
+            <a href="/articles/dog_breed.html">Choosing the Right Dog Breed for Your Lifestyle</a>
+            <div class="article-content">
+                Finding the perfect dog breed to match your lifestyle is an important decision. Whether you're an active outdoor enthusiast or prefer...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/prepare_home.html';">
+            <a href="/articles/prepare_home.html">Preparing Your Home for a New Dog</a>
+            <div class="article-content">
+                Getting ready to welcome a new furry friend into your home? Proper preparation is key to ensuring a smooth transition for both you and your...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/dog_behaviour.html';">
+            <a href="/articles/dog_behaviour.html">Understanding Dog Behavior: Signs of Stress and Anxiety</a>
+            <div class="article-content">
+                Dogs communicate their feelings and emotions in various ways, and it's essential for pet owners to understand the signs of stress and anxiety in their...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/training_tips.html';">
+            <a href="/articles/training_tips.html">Training Tips for a Well-Behaved Dog</a>
+            <div class="article-content">
+                Training your dog is an essential part of pet ownership and helps establish a strong bond between you and your furry friend. Whether you're teaching...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/dog_Care.html';">
+            <a href="/articles/dog_Care.html">Basic Dog Care 101: Essential Tips for New Dog Owners</a>
+            <div class="article-content">
+                Bringing a furry friend into your home is an exciting and rewarding experience. However, it also comes with great responsibility...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/dog_breed.html';">
+            <a href="/articles/dog_breed.html">Choosing the Right Dog Breed for Your Lifestyle</a>
+            <div class="article-content">
+                Finding the perfect dog breed to match your lifestyle is an important decision. Whether you're an active outdoor enthusiast or prefer...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/prepare_home.html';">
+            <a href="/articles/prepare_home.html">Preparing Your Home for a New Dog</a>
+            <div class="article-content">
+                Getting ready to welcome a new furry friend into your home? Proper preparation is key to ensuring a smooth transition for both you and your...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/dog_behaviour.html';">
+            <a href="/articles/dog_behaviour.html">Understanding Dog Behavior: Signs of Stress and Anxiety</a>
+            <div class="article-content">
+                Dogs communicate their feelings and emotions in various ways, and it's essential for pet owners to understand the signs of stress and anxiety in their...
+            </div>
+        </div>
+        <div class="article" onclick="window.location='/articles/training_tips.html';">
+            <a href="/articles/training_tips.html">Training Tips for a Well-Behaved Dog</a>
+            <div class="article-content">
+                Training your dog is an essential part of pet ownership and helps establish a strong bond between you and your furry friend. Whether you're teaching...
+            </div>
+        </div>
+        <!-- Add more articles as needed -->
+    </div>
+</body>
+</html>

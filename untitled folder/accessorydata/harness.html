@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Harness</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .accessory-details {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #222;
+  }
+  .accessory-details h2 {
+    margin-top: 0;
+  }
+  .accessory-details img {
+    max-width: 250px;
+    border-radius: 10px;
+  }
+  .order-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #222;
+  }
+  .order-form input[type="text"],
+  .order-form input[type="email"],
+  .order-form input[type="tel"],
+  .order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+  }
+  .order-form input[type="submit"],
+  .order-form input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  .order-form input[type="submit"]:hover,
+  .order-form input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="accessory-details">
+    <img src="/resources/harness.jpg" alt="Pet Harness">
+    <h2>Pet Harness</h2>
+    <p>Type: Adjustable</p>
+    <p>Color: Blue</p>
+    <p>Size: Small, Medium, Large</p>
+    <p>Description: Keep your pet safe and secure during walks with this adjustable pet harness. Made with durable materials and available in various sizes.</p>
+    <div class="order-form">
+      <h3>Order Form</h3>
+      <form id="orderForm" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required><br>
+        <input type="text" name="address" placeholder="Your Address" required><br>
+        <textarea name="message" placeholder="Additional Notes" rows="4"></textarea><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+  </div>
+  <!-- Add more pet harness details if needed -->
+</div>
+
+<script>
+  document.getElementById("orderForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Order has been placed! Shipping will be processed post confirmation of address.");
+    // You can add code here to send the form data to a server using AJAX if needed
+  });
+</script>
+
+</body>
+</html>

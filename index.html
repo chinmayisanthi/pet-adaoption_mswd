@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin & Adopter</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .btn-admin {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .btn-adopter {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-admin" onclick="redirectToAdmin()">Admin</button>
+        <button class="btn btn-adopter" onclick="redirectToAdopter()">Adopter</button>
+    </div>
+
+    <script>
+        function redirectToAdmin() {
+            // Redirect to admin page
+            window.location.href = "login.html";
+        }
+
+        function redirectToAdopter() {
+            // Redirect to adopter page
+            window.location.href = "index_adopt.html";
+        }
+    </script>
+</body>
+</html>

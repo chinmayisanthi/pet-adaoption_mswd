@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Changed background color to black */
+            color: white; /* Changed text color to white for better visibility */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            color: white; /* Changed text color to white */
+        }
+        th {
+            background-color: #007bff; /* Retained background color for table headers */
+        }
+        tr:nth-child(even) {
+            background-color: #333; /* Changed even row background color */
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+        }
+        .btn-danger:hover {
+            background-color: #bd2130;
+        }
+
+        .navbar{
+			background: none; padding-right: 15px;padding-left: 15px;  border-radius: 10px; opacity: 1;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 600;
+			font-style: normal;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		.navbar ul li a {
+			margin: 10px;
+			position: relative;
+			color: white;
+			text-decoration: none;
+		}
+		.navbar ul li a::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			background-color: white;
+			visibility: hidden;
+			transform: scaleX(0);
+			transition: all 0.3s ease-in-out;
+		}
+		.navbar ul li a:hover::after {
+			visibility: visible;
+			transform: scaleX(1);
+		}
+    </style>
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Admin Panel</a> </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/resourcer_center.html">Resource Center</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>Adoption Requests</h1>
+        <table>
+            <tbody>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Breed</th>
+                    <th>Status</th>
+                    <th>Change Status</th>
+                </tr>
+
+                <tr>
+                    <td>John Doe2</td>
+                    <td>john@example.com</td>
+                    <td>Golden Retriever</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td>German Shepherd</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Michael Johnson</td>
+                    <td>michael@example.com</td>
+                    <td>Labrador Retriever</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amy Wilson</td>
+                    <td>amy@example.com</td>
+                    <td>Bulldog</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>David Brown</td>
+                    <td>david@example.com</td>
+                    <td>Poodle</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sarah Clark</td>
+                    <td>sarah@example.com</td>
+                    <td>Beagle</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>James Lee</td>
+                    <td>james@example.com</td>
+                    <td>Boxer</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emily Taylor</td>
+                    <td>emily@example.com</td>
+                    <td>Rottweiler</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Matthew Evans</td>
+                    <td>matthew@example.com</td>
+                    <td>Husky</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Olivia Rodriguez</td>
+                    <td>olivia@example.com</td>
+                    <td>Shih Tzu</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="btn view-btn">View</button>
+                        <button class="btn btn-danger reject-btn">Reject</button>
+                        <button class="btn accept-btn">Approve</button>
+                    </td>
+                </tr>
+                
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Function to update status
+        function updateStatus(statusElement, status) {
+            // Update status in local storage
+            localStorage.setItem('adoptionStatus', status);
+            // Update status in the UI
+            statusElement.innerText = status;
+        }
+
+        // Event listeners for button clicks
+        document.querySelectorAll('.reject-btn').forEach((button) => {
+            button.addEventListener('click', () => {
+                const statusElement = button.parentElement.parentElement.querySelector('.status');
+                // Show alert
+                alert('Email updating the status to the customer has been sent.');
+                // Update status
+                updateStatus(statusElement, 'Rejected');
+            });
+        });
+
+        document.querySelectorAll('.accept-btn').forEach((button) => {
+            button.addEventListener('click', () => {
+                const statusElement = button.parentElement.parentElement.querySelector('.status');
+                // Show alert
+                alert('Email sent successfully to the customer');
+                // Update status
+                updateStatus(statusElement, 'Accepted');
+            });
+        });
+
+        // Check if status is stored in local storage and update UI accordingly
+        const storedStatus = localStorage.getItem('adoptionStatus');
+        if (storedStatus) {
+            document.querySelectorAll('.status').forEach((statusElement) => {
+                statusElement.innerText = storedStatus;
+            });
+        }
+    </script>
+</body>
+</html>

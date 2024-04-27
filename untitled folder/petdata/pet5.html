@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Breeds</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .pet-details {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #222;
+  }
+  .pet-details h2 {
+    margin-top: 0;
+  }
+  .pet-details img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .adoption-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #222;
+  }
+  .adoption-form input[type="text"],
+  .adoption-form input[type="email"],
+  .adoption-form input[type="tel"],
+  .adoption-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+  }
+  .adoption-form input[type="submit"],
+  .adoption-form input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  .adoption-form input[type="submit"]:hover,
+  .adoption-form input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="pet-details">
+    <img src="/resources/german_shepherd.jpeg" alt="German Shepherd">
+    <h2>German Shepherd</h2>
+    <p>Size: Large</p>
+    <p>Color: Various (Most commonly tan and black)</p>
+    <p>Temperament: Intelligent, Loyal, Confident</p>
+    <p>Description: The German Shepherd is a highly intelligent and versatile breed. They are known for their loyalty, confidence, and ability to excel in various roles such as police work, search and rescue, and as family pets.</p>
+    <div class="adoption-form">
+      <h3>Adoption Form</h3>
+      <form id="adoptionForm" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required><br>
+        <input type="text" name="location" placeholder="Your Location" required><br>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+  </div>
+  <!-- Repeat for other dog breeds -->
+</div>
+
+<script>
+  document.getElementById("adoptionForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Adoption request placed successfully! We will contact you soon.");
+    // You can add code here to send the form data to a server using AJAX if needed
+  });
+</script>
+
+</body>
+</html>
